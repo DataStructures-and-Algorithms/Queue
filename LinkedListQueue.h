@@ -46,6 +46,7 @@ int LinkedListQueue::dequeue() {
     else {
         int returnVal = list.getHeadValue();
         list.deleteNode(0);
+        currSize--;
         return returnVal;
     }
 }
